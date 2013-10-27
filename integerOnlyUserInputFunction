@@ -1,0 +1,16 @@
+#!/usr/bin/python
+def intDefinition(var):
+        truth=True
+        while (truth==True):
+                try:
+                        val = float(var)
+                        return val
+                        truth=False
+                except ValueError:
+                        print("That's not an number!")
+                        truth=True
+                        var = raw_input("Enter a number: ")
+var = raw_input("Enter a number: ")
+m=intDefinition(var)
+print m
+
